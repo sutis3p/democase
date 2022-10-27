@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form method="get" action="index.html" name="form">
+     <label for="name">Tên đăng nhập:</label><br>
+     <input id="name" name="name" type="text" value=""><br>
+
+     <label>Mật khẩu:</label><br>
+     <input  id="pass" name="pass" type="password" value=""> <br>
+
+     <input type="button" onclick="dangnhap()" name="" value="Đăng Nhập" >
+
+ </form>
+
+</body>
+</html>
+<script>
+    function dangnhap(){
+        class user{
+
+        }
+        let name = (form.name.value);
+        let pass = (form.pass.value);
+        console.log(name)
+        console.log(pass)
+        if (name == 'sutidepzai' && pass == '050304' ) {
+            window.location= "vxvv.html"
+
+        }else{
+            alert("ban da sai mat khau")
+        }
+    }
+</script>

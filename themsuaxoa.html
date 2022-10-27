@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Name: <input id="inputName" placeholder="nhap ten"><br>
+Img: <input id="inputImg" placeholder="nhap anh"><br>
+Content: <input id="inputContent" placeholder="nhap no dung"><br>
+<button onclick="add()">ADD</button>
+<h1>Danh sach chinh sua</h1>
+<table id="suti" width="400"></table>
+</body>
+</html>
+<script>
+    class Student {
+        name;
+        img;
+        content;
+
+        constructor(name, img, content) {
+            this.name = name;
+            this.img = img;
+            this.content = content;
+        }
+    }
+
+    let a = new Student("ten meo", "anh-cho-dep-0.jpg", "dang yeu")
+    let b = new Student("ten cho", "hinh-nen-meo-de-thuong-cho-may-tinh.jpg", "hoho")
+
+    let students = [a, b];
+    let divshow = document.getElementById("suti");
+
+    function show() {
+        let str = [];
+        for (let i = 0; i < students.length; i++) {
+            str += `<tr>
+<td> ${students[i].name}</td>
+<td><img src="${students[i].img}" width="200" height="150"></td>
+<td> ${students[i].content}</td>
+<td><button onclick="edit(${i})">Edit</button></td>
+<td><button onclick="xoa(${i})">Delete</button></td>
+</tr>`
+        }
+        divshow.innerHTML = str;
+    }
+
+    show();
+
+    function edit(index) {
+        let name = prompt("nhap name muon sua");
+        let img = prompt("nhap img muon sua");
+        let content = prompt("nhap content muon sua");
+        let newObj = new Student(name, img, content);
+        students.splice(index, 1, newObj);
+        show();
+    }
+
+    function add() {
+        let name = document.getElementById("inputName").value;
+        let img = document.getElementById("inputImg").value;
+        let content = document.getElementById("inputContent").value;
+        let newObj = new Student(name, img, content);
+        students.push(newObj);
+        show();
+    }
+
+    function xoa(index) {
+        students.splice(index, 1);
+        show();
+    }
+</script>

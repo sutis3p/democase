@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>body {
+        margin: 0;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navbar a:hover {
+        background: #ddd;
+        color: black;
+    }
+
+    #suti {
+        background: antiquewhite;
+        height: 200px;
+        width: 100%;
+        position: relative;
+        padding-left: 0px;
+        margin-top: 50px;
+
+    }
+
+    #sto {
+        color: brown;
+        font-size: 40px;
+    }
+
+    #ttt {
+        position: absolute;
+    }
+
+    #logo {
+        width: 600px;
+        float: left;
+    }
+
+    /*.duong{*/
+    /*    margin-top: -17px;*/
+    /*}*/
+
+    </style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div style="background-image: url('https://i.ytimg.com/vi/cq5qIehr198/maxresdefault.jpg'); background-repeat: no-repeat; background-size: cover">
+    <div class="navbar">
+        <a href="index.html">Trang Chủ</a>
+        <a href="https://dogcatmeat.four-paws.org.vn/">Thông Tin</a>
+        <a href="https://dogily.vn/mua-meo/?gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ0b873f8xlFpQ1liT0I6E8PSVZGnkVTYy6-01YrskQN44tt-EEpJfoaAq0IEALw_wcB">Mua</a>
+        <a href="#Đăng Kí" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"
+           id="dk_bnt">Đăng Kí</a>
+        <a href="#Đăng Nhập" onclick="document.getElementById('loginBox').showModal()">Đăng Nhập</a>
+    </div>
+    <div id="suti">
+        <table id="ttt" border="0">
+            <tr>
+                <td id="logo">
+                    <img height="200px"
+                         src="https://seeklogo.com/images/C/cat-logo-E6BC30BEB2-seeklogo.com.png" style="height: 190px">
+                </td>
+                <td>
+                    <p id="sto">SUTI SHOP
+                    <center style="background-color: aqua">mãi mãi một tình yêu</center>
+                    <br></p>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="duong">
+        <p id="y">
+        <center style="background-color: darksalmon" ;>YÊU THƯƠNG CHÓ MÈO</center>
+        </p>
+    </div>
+    <div class="row suti" style="display: flex; justify-content: space-between">
+        <div class="col-lg-4">
+            <img src="c1c8b635f7b103ae6349599a2e8bebfa.jpg" style="height: 200px;width: 300px;">
+            <div>
+                <center>Anh Quát Em À</center>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <img src="download.jpg" style="height: 200px">
+            <div>
+                <center>Gì Mà Nói To Thế</center>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <img src="anh-meo-con-2.jpg" style="height: 200px;width: 300px ">
+            <div>
+                <center>Dỗi</center>
+            </div>
+        </div>
+    </div>
+    <div class="row bin" style="display: flex; justify-content: space-between">
+        <div class="col-lg-3">
+            <img src="hình-ảnh-chó-bulldog-trên-đồng-cỏ.jpg" style="width: 200px; height: 150px">
+            <div>
+                <center>Cạch Mắt Mày Nha Con</center>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <img src="anh-che-cho-hai-huoc-cho-dien-thoai-14.jpg" style="width: 200px; height: 150px">
+            <div>
+                <center>Ahihi Đồ Ngốc</center>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <img src="anh-cun-con-de-thuong-6.jpg" style="width: 200px; height: 150px">
+            <div>
+                <center>Hin Nhũi Ê</center>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <img src="anh-cho-dep-0.jpg" style="width: 200px; height: 150px">
+            <div>
+                <center>Nói Thế Mà Cứ Chơ Chơ Cái Mặt Ra</center>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                          class="w3-button w3-display-topright">&times;</span>
+                    <from action="vxvv.html">
+                        <div class="container">
+                            <table>
+                                <tr>
+
+                                    <td><b>Tên Hiển Thị</b></td>
+                                    <td><input type="text" placeholder="Nhập Tên Hiển Thị" name="email" id="tenhienthi"
+                                               required><br></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Tài Khoản</b></td>
+                                    <td><input type="text" placeholder="Viết Tài Khoản" name="psw" id="taikhoan"
+                                               required><br></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Mật Khẩu</b></td>
+                                    <td><input type="password" placeholder="Viết Mật Khẩu" name="psw-repeat"
+                                               id="matkhau" required></td>
+                                </tr>
+                            </table>
+                            <button id="dkbnt" onclick="dangki()">Đăng Kí</button>
+                        </div>
+                    </from>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<dialog id="loginBox">
+    <form method="get" action="index.html" name="form">
+        <label for="name">Tên đăng nhập:</label><br>
+        <input id="name" name="name" type="text" value=""><br>
+
+        <label>Mật khẩu:</label><br>
+        <input id="pass" name="pass" type="password" value=""> <br>
+
+        <input type="button" onclick="dangnhap()" name="" value="Đăng Nhập">
+
+    </form>
+</dialog>
+</div>
+</body>
+</html>
+<script>
+    class nguoidung {
+        ten;
+        taikhoan;
+        matkhau;
+
+        constructor(ten, taikhoan, matkhau) {
+            this.ten = ten;
+            this.taikhoan = taikhoan;
+            this.matkhau = matkhau;
+        }
+    }
+
+    let n1 = new nguoidung("ngọc chó lợn", "ngocnon", "1")
+    let n2 = new nguoidung("bon a đuồi", "boncc", "1")
+    let n3 = new nguoidung("huy ăn cứt", "huydb", "1")
+    let ql = [n1, n2, n3]
+
+    function dangnhap() {
+        let name = document.getElementById("name").value
+        let pass = document.getElementById("pass").value
+        console.log(name)
+        console.log(pass)
+        for (let i = 0; i < ql.length; i++) {
+            if (name == ql[i].taikhoan && pass == ql[i].matkhau) {
+                alert(ql[i].ten)
+                window.location = "themsuaxoa.html"
+                return
+            }
+        }
+        alert("sai tai khoan hoac mat khau")
+        document.getElementById('loginBox').close()
+    }
+
+    function dangki() {
+        let tenhienthi = document.getElementById("tenhienthi").value
+        let taikhoan = document.getElementById("taikhoan").value
+        let matkhau = document.getElementById("matkhau").value
+        let nnew = new nguoidung(tenhienthi, taikhoan, matkhau)
+        if (taikhoan == [] || matkhau == []) {
+            alert('không thể đăng kí')
+
+        } else {
+            ql.push(nnew)
+            console.log(ql)
+            alert('đăng kí thành công')
+
+        }
+
+
+    }
+</script>
+<!--.close()-->
